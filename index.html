@@ -5,32 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/main.css" />
   </head>
   <body>
-      <header>
-        <div class="container header_container">
-          <div class="logo">
-            <img src="src/img/LOGO.png" class="img-fluid" alt="">
-          </div>
-          <button id="hamburger-btn" class="header__hamburger"></button>
-          <nav id="menu" class="menu">
-            <ul class="main-menu">
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
+    <header>
+      <div class="container header_container">
+        <div class="logo">
+          <img src="src/img/LOGO.png" class="img-fluid" alt="" />
         </div>
-      </header>
-      
-      <script
+        <button
+          id="hamburger-btn"
+          class="hamburger hamburger--spin"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav id="menu" class="menu">
+          <ul class="main-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
-      <script src="src/js/main.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
