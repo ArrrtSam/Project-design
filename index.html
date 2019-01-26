@@ -9,13 +9,12 @@
   </head>
   <body>
       <header>
-        <div class="header_container">
+        <div class="container header_container">
           <div class="logo">
-            <img src="src/img/LOGO.png" alt="">
+            <img src="src/img/LOGO.png" class="img-fluid" alt="">
           </div>
-          <input type="checkbox" id="menu-checkbox">
-          <nav role="navigation">
-            <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick></label>
+          <button id="hamburger-btn" class="header__hamburger"></button>
+          <nav id="menu" class="menu">
             <ul class="main-menu">
               <li><a href="#">HOME</a></li>
               <li><a href="#">PORTFOLIO</a></li>
@@ -26,11 +25,6 @@
           </nav>
         </div>
       </header>
-      
-
-
-
-
       
       <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"

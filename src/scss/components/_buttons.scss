@@ -1,20 +1,30 @@
-.toggle-button{
-    text-align: center;
+.toggle-button {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: #000;
+  &:after {
+    content: attr(data-open);
     display: block;
-    cursor: pointer;
-    color: #000;
-    &:after{
-        content: attr(data-open);
-        display: block;
-    }
-    @media screen and (min-width: $medium-devices){
-        display: none;
-    }
-    
-    @media screen and (min-width: $extra-large-devices) {
-            
-    }
+  }
+  @media screen and (min-width: $medium-devices) {
+    display: none;
+  }
+
+  @media screen and (min-width: $extra-large-devices) {
+  }
 }
-#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
-    content: attr(data-close);
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+  content: attr(data-close);
+}
+
+.header__hamburger {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  display: block;
+  @media screen and (min-width: $medium-devices) {
+    display: none;
+  }
 }

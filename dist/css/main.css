@@ -12,19 +12,43 @@ a {
   text-decoration: none; }
 
 header {
-  padding: 37px 0 22px 0;
   background: #f6f6f6; }
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 37px 0 22px 0; } }
 
 .header_container {
   max-width: 100%;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; }
+  @media screen and (min-width: 768px) {
+    .header_container {
+      justify-content: space-around;
+      position: static; } }
   @media screen and (min-width: 1200px) {
     .header_container {
       max-width: 90%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between; } }
+  .header_container .menu {
+    position: fixed;
+    top: 70px;
+    left: -300px;
+    transition: all 0.5s; }
+    .header_container .menu--active {
+      left: 0; }
+    @media screen and (min-width: 768px) {
+      .header_container .menu {
+        position: static;
+        display: block; } }
+  .header_container .logo {
+    max-width: 70px; }
+    @media screen and (min-width: 768px) {
+      .header_container .logo {
+        max-width: initial; } }
   .header_container a {
     color: #000;
     font-size: 16px;
@@ -34,21 +58,22 @@ header {
     .header_container a:hover {
       background: #ffea00; }
 
-.main-menu {
-  display: none;
-  padding-top: 27px; }
-  .main-menu li {
-    display: block;
-    font-size: 12px; }
-  .main-menu a {
-    display: block;
-    padding: 8px; }
-  @media screen and (min-width: 768px) {
-    .main-menu {
-      display: flex; } }
-  @media screen and (min-width: 1200px) {
-    .main-menu {
-      display: flex; } }
+.main-menu li {
+  display: block;
+  font-size: 12px; }
+
+.main-menu a {
+  display: block;
+  padding: 8px; }
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    display: flex;
+    padding-top: 27px; } }
+
+@media screen and (min-width: 1200px) {
+  .main-menu {
+    display: flex; } }
 
 #menu-checkbox {
   display: none; }
@@ -70,3 +95,13 @@ header {
 
 #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
   content: attr(data-close); }
+
+.header__hamburger {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .header__hamburger {
+      display: none; } }
