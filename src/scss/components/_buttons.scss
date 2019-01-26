@@ -19,10 +19,11 @@
 }
 
 .header__hamburger {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: red;
   border: none;
+  cursor: pointer;
   display: block;
   @media screen and (min-width: $medium-devices) {
     display: none;

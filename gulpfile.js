@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
+const sourcemaps = require('gulp-sourcemaps');
 const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const del = require("delete");
@@ -13,14 +14,16 @@ gulp.task("serve", () => {
       baseDir: "./"
     }
   });
-  gulp.watch("./src/scss/**/*.scss", gulp.series(["scss", "minifyCss"]));
+  gulp.watch("./src/scss/**/*.scss", gulp.series(["scss"]));
   gulp.watch("./*.html").on("change", browserSync.reload);
 });
 
 gulp.task("scss", () => {
   return gulp
     .src("./src/scss/main.scss")
+    .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist/css"))
 });
 
