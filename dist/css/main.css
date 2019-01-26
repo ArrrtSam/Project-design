@@ -1,0 +1,72 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none;
+  display: flex; }
+
+a {
+  text-decoration: none; }
+
+header {
+  padding: 37px 0 22px 0;
+  background: #f6f6f6; }
+
+.header_container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  @media screen and (min-width: 1200px) {
+    .header_container {
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between; } }
+  .header_container a {
+    color: #000;
+    font-size: 16px;
+    padding: 27px 10px 30px 9px;
+    margin-right: 70px;
+    text-decoration: none; }
+    .header_container a:hover {
+      background: #ffea00; }
+
+.main-menu {
+  display: none;
+  padding-top: 27px; }
+  .main-menu li {
+    display: block;
+    font-size: 12px; }
+  .main-menu a {
+    display: block;
+    padding: 8px; }
+  @media screen and (min-width: 768px) {
+    .main-menu {
+      display: flex; } }
+  @media screen and (min-width: 1200px) {
+    .main-menu {
+      display: flex; } }
+
+#menu-checkbox {
+  display: none; }
+
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+  display: block; }
+
+.toggle-button {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  color: #000; }
+  .toggle-button:after {
+    content: attr(data-open);
+    display: block; }
+  @media screen and (min-width: 768px) {
+    .toggle-button {
+      display: none; } }
+
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+  content: attr(data-close); }
