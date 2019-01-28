@@ -80,4 +80,47 @@ header {
     display: flex;
   }
 }
-
+.top-slide{
+  background-image: url("../img/slider_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 123px;
+  padding-bottom: 303px;
+  .top-container{
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+.specialize-container{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.top-container__text {
+  margin-top: 14px;
+}
+.bottom-card{
+  background: #414146;
+}
+.specialize-cards{
+  display: flex;
+  justify-content: space-between;
+}
+.top-card{
+  background: #FFEA00;
+}
+.card_1{
+  img{
+    padding: 40px 70px 40px 70px;
+  }
+}
+.card_2{
+  img{
+    padding: 44px 70px 45px 70px;
+  }
+}
+.card_3{
+  img{
+    padding: 33px 81px 34px 81px;
+  }
+}

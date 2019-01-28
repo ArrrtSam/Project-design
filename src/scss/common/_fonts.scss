@@ -1,1 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.top-slide {
+  h2 {
+    background: #ffea00;
+    display: inline;
+    line-height: 1.5;
+    font-size: 70px;
+    padding: 0 13px;
+  }
+  p {
+    background: #414146;
+    display: inline;
+    line-height: 1.375;
+    font-size: 24px;
+    color: #fff;
+    padding: 0 5px;
+  }
+}
+.main-h {
+  font-size: 35px;
+  padding-top: 90px;
+  text-transform: uppercase;
+}
+.main-p {
+  font-size: 24px;
+  margin-top: 27px;
+  margin-bottom: 60px;
+}
+.first-p {
+  font-size: 20px;
+  color: #fff;
+  background: #414146;
+  margin-bottom: 0;
+  padding: 17px 43px 18px 17px;
+}
+.top-card {
+  h3 {
+    font-size: 20px;
+  }
+}
+.second-p {
+    font-size: 13px;
+    color: #fff;
+    background: #414146;
+    margin-bottom: 0;
+    padding: 27px 38px 30px 25px;
+  }
