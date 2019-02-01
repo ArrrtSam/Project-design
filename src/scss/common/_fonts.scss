@@ -40,9 +40,23 @@
   }
 }
 .second-p {
-    font-size: 13px;
-    color: #fff;
-    background: #414146;
-    margin-bottom: 0;
-    padding: 27px 38px 30px 25px;
+  font-size: 13px;
+  color: #fff;
+  background: #414146;
+  margin-bottom: 0;
+  padding: 27px 38px 30px 25px;
+}
+.portfolio-container {
+  h4 {
+    background: #424147;
+    padding: 9px 28px;
+    display: inline-block;
+    color: #ffea00;
+    font-size: 18px;
+    margin-bottom: 33px;
   }
+  p{
+    color: #424146;
+    font-size: 16px;
+  }
+}

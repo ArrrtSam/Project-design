@@ -7,3 +7,19 @@
     display: none;
   }
 }
+.toggles{
+  button{
+    border: none;
+    color: #424146;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 5px;
+    background: #fff;
+    &::after{
+      content: ' / '
+    }
+    &:last-child:after{
+      content: ''
+    }
+  }
+}
