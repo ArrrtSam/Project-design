@@ -1,4 +1,10 @@
-.posts{
-    width: 90%;
-    
+.posts {
+  figure {
+    width: 300px;
+    height: 250px;
+    margin: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+}

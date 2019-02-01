@@ -103,50 +103,23 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt.
           </p>
-          <div class="toggles">
-            <button id="showall">SHOW ALL</button>
-            <button id="webdev">WEB DEVELOPMENT</button>
-            <button id="webdesign">WEB DESIGN</button>
-            <button id="graphd">GRAPHIC DESIGN</button>
+          <div class="toggles filter-button-group">
+            <button data-filter="*">SHOW ALL</button>
+            <button data-filter=".webdev">WEB DEVELOPMENT</button>
+            <button data-filter=".webdesign">WEB DESIGN</button>
+            <button data-filter=".graphd">GRAPHIC DESIGN</button>
           </div>
           <div class="posts">
-            <div class="row-1">
-              <div class="post webdev img1">
-                <img src="dist/img/webdev1.png" alt="" />
-              </div>
-              <div class="post webdev img4">
-                <img src="dist/img/webdev2.png" alt="" />
-              </div>
-              <div class="post webdev img5">
-                <img src="dist/img/webdev3.png" alt="" />
-              </div>
-              <div class="post webdesign img2">
-                <img src="dist/img/webdes1.png" alt="" />
-              </div>
-            </div>
-            <div class="row-2">
-              <div class="post webdesign img6">
-                <img src="dist/img/webdes2.png" alt="" />
-              </div>
-              <div class="post webdesign img7">
-                <img src="dist/img/webdes3.png" alt="" />
-              </div>
-              <div class="post graphd img3">
-                <img src="dist/img/graphdes1.png" alt="" />
-              </div>
-
-              <div class="post graphd img8">
-                <img src="dist/img/graphdes2.png" alt="" />
-              </div>
-            </div>
-            <div class="row-3">
-              <div class="post graphd img9">
-                <img src="dist/img/graphdes3.png" alt="" />
-              </div>
-              <div class="post graphd img10">
-                <img src="dist/img/graphdes4.png" alt="" />
-              </div>
-            </div>
+            <figure style="background-image: url('./dist/img/webdev1.png')" class="webdev"></figure>
+            <figure style="background-image: url('./dist/img/webdev2.png')" class="webdev"></figure>
+            <figure style="background-image: url('./dist/img/webdev3.png')" class="webdev"></figure>
+            <figure style="background-image: url('./dist/img/webdes1.png')" class="webdesign"></figure>
+            <figure style="background-image: url('./dist/img/webdes2.png')" class="webdesign"></figure>
+            <figure style="background-image: url('./dist/img/webdes3.png')" class="webdesign"></figure>
+            <figure style="background-image: url('./dist/img/graphdes1.png')" class="graphd"></figure>
+            <figure style="background-image: url('./dist/img/graphdes2.png')" class="graphd"></figure>
+            <figure style="background-image: url('./dist/img/graphdes3.png')" class="graphd"></figure>
+            <figure style="background-image: url('./dist/img/graphdes4.png')" class="graphd"></figure>
           </div>
         </div>
       </section>
