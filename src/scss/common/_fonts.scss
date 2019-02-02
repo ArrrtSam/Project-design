@@ -46,7 +46,7 @@
   margin-bottom: 0;
   padding: 27px 38px 30px 25px;
 }
-.portfolio-container {
+.portfolio-container,  {
   h4 {
     background: #424147;
     padding: 9px 28px;
@@ -58,5 +58,20 @@
   p{
     color: #424146;
     font-size: 16px;
+  }
+}
+.brand-slider{
+  h4 {
+    background: #424147;
+    padding: 9px 28px;
+    display: inline-block;
+    color: #ffea00;
+    font-size: 18px;
+    margin-bottom: 33px;
+  }
+  p{
+    color: #424146;
+    font-size: 16px;
+    margin-bottom: 40px;
   }
 }
