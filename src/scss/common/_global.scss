@@ -147,5 +147,134 @@ header {
 .owl-carousel{
   margin-bottom: 120px;
 }
+footer{
+  background: #414146;
+  padding: 30px 65px;
+  color: #fff;
+  
+}
+.imgs{
+  img{
+    margin-top: 5px
+  }
+}
+.tweets{
+  margin-right: 140px;
+  p{
+    margin-top: 30px;
+    font-size: 14px;
+    img{
+      margin-right: 20px;
+    }
+  }
+}
+.soccont{
+  display: flex;
+  margin-top: 80px;
+  h4{
+    margin-top: 3px;
+    margin-right: 9px;
+  }
+  img{
+    margin-right: 2px;
+  }
+}
+.address{
+  display: flex;
+  margin-top: 40px;
+  p{
+    font-size: 13px;
+  }
+  img{
+    margin-right: 17px;
+  }
+}
+.about-us{
+  width: 410px;
+  margin-right: 90px;
+}
+.contacts{
+  width: 320px;
+  img{
+    width: 30px;
+    height: 30px;
+  }
+  .follow-us{
+    h4{
+      font-size: 18px;
+      margin-top: 40px;
+    }
+    p{
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .follow-input{
+      box-direction: none;
+      width: 230px;
+      background-color: transparent;
+      outline: none;
+      color: #fff;
+      border: none;
+      border-bottom: 2px solid #FFEA00;
+      
+    }
+    .submit_email{
+      background-image: url(../img/email-icon.png);
+      width: 30px;
+      height: 30px;
+      border: none;
+    }
+    form{
+      display: flex;
+    }
+  }
+}
+.phn{
+  margin-top: 20px;
+  display: flex;
+  img{
+    margin-right: 17px;
+  }
+  p{
+    position: relative;
+    font-size: 13px;
+    &::after{
+      content: "+38 045 845-45-79";
+      position: absolute;
+      left: 43px;
+      
+    }
+  }
+}
+.mail{
+  margin-top: 30px;
+  display: flex;
+  img{
+    margin-right: 17px;
+  }
+  p{
+    font-size: 13px;
+  }
+}
+.footer-nav{
+  background: #000;
+  width: 90%;
+  margin: 0 auto;
+  .footer-menu{
+      display: flex;
+      justify-content: center;
+      padding: 28px 0;
+      font-size: 16px;
+    a{
+      color: #fff;
+      text-decoration: none;
+      margin-right: 80px;
 
+    }
+    .last{
+      margin-right: 0;
+    }
+    
+  }
+}
 
