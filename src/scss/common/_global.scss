@@ -2,19 +2,24 @@
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style: none;
   display: flex;
 }
+
 a {
   text-decoration: none;
 }
+
 header {
   background: #f6f6f6;
+
   @media screen and (min-width: $medium-devices) {
     padding: 37px 0 22px 0;
   }
 }
+
 .header_container {
   max-width: 100%;
   display: flex;
@@ -23,195 +28,265 @@ header {
   position: fixed;
   background: #f6f6f6;
   z-index: 1;
+
   @media screen and (min-width: $medium-devices) {
     justify-content: space-around;
     position: static;
   }
+
   @media screen and (min-width: $extra-large-devices) {
     max-width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
+
   .menu {
     position: fixed;
     top: 70px;
-    left: -300px;
+    left: -1000px;
     transition: all 0.5s;
 
     &--active {
       left: 0;
     }
+
     @media screen and (min-width: $medium-devices) {
       position: static;
       display: block;
     }
   }
+
   .logo {
     max-width: 70px;
+
     @media screen and (min-width: $medium-devices) {
       max-width: initial;
     }
   }
+
   a {
     color: #000;
     font-size: 16px;
     padding: 27px 10px 30px 9px;
+
     &:hover {
       background: #ffea00;
     }
-    margin-right: 70px;
+
     text-decoration: none;
+
+    @media screen and (min-width: $medium-devices) {
+      margin-right: 70px;
+    }
   }
 }
+
 .main-menu {
   li {
     display: block;
     font-size: 12px;
     background: #f6f6f6;
   }
+
   a {
     display: block;
-    padding: 8px;
+    padding: 20px;
+    text-align: center;
+    font-size: 21px;
   }
+
   @media screen and (min-width: $medium-devices) {
     display: flex;
     padding-top: 27px;
+
+    a {
+      font-size: 16px;
+    }
   }
 
   @media screen and (min-width: $extra-large-devices) {
     display: flex;
   }
 }
-.top-slide{
+
+.top-slide {
   background-image: url("../img/slider_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 123px;
   padding-bottom: 303px;
-  .top-container{
+
+  .top-container {
     width: 85%;
     margin: 0 auto;
   }
 }
-.specialize-container{
+
+.specialize-container {
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
-  
+
 }
+
 .top-container__text {
   margin-top: 14px;
 }
-.bottom-card{
+
+.bottom-card {
   background: #414146;
 }
-.specialize-cards{
+
+.specialize-cards {
+
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding-bottom: 90px;
-}
-.card{
-  margin-right: 53px;
-  &:last-child{
-    margin-right: 0;
+  grid-template-columns: auto;
+
+  @media screen and (min-width: $medium-devices) {
+    display: grid;
+    grid-template-columns: auto auto;
   }
+
+  @media screen and (min-width:$extra-large-devices) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 90px;
+  }
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+
+
   height: 285px;
   width: 250px;
+  margin-bottom: 50px;
 }
-.top-card{
+
+.top-card {
   background: #FFEA00;
 }
-.card_1{
-  img{
+
+.card_1 {
+  img {
     padding: 40px 70px 40px 70px;
   }
 }
-.card_2{
-  img{
+
+.card_2 {
+  img {
     padding: 44px 70px 45px 70px;
   }
 }
-.card_3{
-  img{
+
+.card_3 {
+  img {
     padding: 33px 81px 34px 81px;
   }
 }
-.portfolio-container{
+
+.portfolio-container {
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
-.brand-slider-container{
+
+.brand-slider-container {
   max-width: 90%;
   margin: 0 auto;
   text-align: center;
 }
-.owl-carousel{
+
+.owl-carousel {
   margin-bottom: 120px;
 }
-footer{
+
+footer {
   background: #414146;
   padding: 30px 65px;
   color: #fff;
-  
+
 }
-.imgs{
-  img{
+
+.imgs {
+  img {
     margin-top: 5px
   }
 }
-.tweets{
-  margin-right: 140px;
-  p{
+
+.tweets {
+  margin-right: 20px;
+
+  p {
     margin-top: 30px;
     font-size: 14px;
-    img{
+
+    img {
       margin-right: 20px;
     }
   }
 }
-.soccont{
+
+.soccont {
   display: flex;
+  flex-direction: column;
   margin-top: 80px;
-  h4{
+  @media screen and (min-width: $extra-large-devices) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h4 {
     margin-top: 3px;
     margin-right: 9px;
   }
-  img{
+  .fb_img{
+    display: flex;
+  }
+  img {
     margin-right: 2px;
+    height: 30px;
+    width: 30px;
   }
 }
-.address{
+
+.address {
   display: flex;
   margin-top: 40px;
-  p{
+
+  p {
     font-size: 13px;
   }
-  img{
+
+  img {
     margin-right: 17px;
   }
 }
-.about-us{
-  width: 410px;
-  margin-right: 90px;
+
+.about-us {
+  margin-right: 20px;
 }
-.contacts{
-  width: 320px;
-  img{
+
+.contacts {
+  img {
     width: 30px;
     height: 30px;
   }
-  .follow-us{
-    h4{
+
+  .follow-us {
+    h4 {
       font-size: 18px;
       margin-top: 40px;
     }
-    p{
+
+    p {
       margin-top: 20px;
       font-size: 13px;
     }
-    .follow-input{
+
+    .follow-input {
       box-direction: none;
       width: 230px;
       background-color: transparent;
@@ -219,65 +294,93 @@ footer{
       color: #fff;
       border: none;
       border-bottom: 2px solid #FFEA00;
-      
+
     }
-    .submit_email{
+
+    .submit_email {
       background-image: url(../img/email-icon.png);
       width: 30px;
       height: 30px;
       border: none;
     }
-    form{
+
+    form {
       display: flex;
     }
   }
 }
-.phn{
+
+.phn {
   margin-top: 20px;
   display: flex;
-  img{
+
+  img {
     margin-right: 17px;
   }
-  p{
+
+  p {
     position: relative;
     font-size: 13px;
-    &::after{
+
+    &::after {
       content: "+38 045 845-45-79";
       position: absolute;
       left: 43px;
-      
+
     }
   }
 }
-.mail{
+
+.mail {
   margin-top: 30px;
   display: flex;
-  img{
+
+  img {
     margin-right: 17px;
   }
-  p{
+
+  p {
     font-size: 13px;
   }
 }
-.footer-nav{
+
+.footer-nav {
   background: #000;
   width: 90%;
   margin: 0 auto;
-  .footer-menu{
+
+  .footer-menu {
+    display: none;
+
+    @media screen and (min-width: $medium-devices) {
       display: flex;
       justify-content: center;
       padding: 28px 0;
       font-size: 16px;
-    a{
+    }
+
+    a {
       color: #fff;
       text-decoration: none;
       margin-right: 80px;
 
     }
-    .last{
+
+    .last {
       margin-right: 0;
     }
-    
+
   }
 }
-
+.bgbl{
+  width: 100%;
+  background: #000;
+  @media screen and (min-width: $medium-devices){
+    display: none;
+  }
+}
+@media screen and (max-width: $medium-devices) {
+  .menu {
+    width: 100%;
+  }
+}

@@ -18,3 +18,5 @@ $(document).ready(function(){
     items:8
   });
 });
+
+new WOW().init();
