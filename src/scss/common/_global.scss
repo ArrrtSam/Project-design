@@ -21,6 +21,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background: #f6f6f6;
+  z-index: 1;
   @media screen and (min-width: $medium-devices) {
     justify-content: space-around;
     position: static;
@@ -66,6 +68,7 @@ header {
   li {
     display: block;
     font-size: 12px;
+    background: #f6f6f6;
   }
   a {
     display: block;
@@ -104,8 +107,8 @@ header {
   background: #414146;
 }
 .specialize-cards{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   padding-bottom: 90px;
 }
 .card{
